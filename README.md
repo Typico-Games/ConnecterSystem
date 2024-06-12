@@ -1,14 +1,5 @@
 # InteractionSystem
-Simple general purpose interaction system used with a set of plugins developed by Typico Games.
+Simple general purpose interaction system used with a set of plugins developed by Typico Games. Actors implementing ISInteractionInterace can be triggered with TriggerComponent or any ready made general usage triggers.
 
-## Interaction Configuration
-### GroupSelection option
-- group actors you want to select in viewport.
-- Fill GroupSelection property inside BoxTrigger actor
-- Press AddActorsToSelection
-
-### Manual Option
-Add elements inside InteractionTargets_BeginOverlap or InteractionTargets_EndOverlap
-
-## BoxTrigger
-- Stepping into or out-of box collision triggers event config
+## Trigger Component
+-main component responsible for triggering interactions.
