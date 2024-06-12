@@ -41,5 +41,42 @@ To use `AISBoxTrigger` in your game:
 - **AddGroupToConfiguration_BeginOverlap**: Adds all children of a selected group actor to the begin overlap interaction targets.
 - **AddGroupToConfiguration_EndOverlap**: Similar functionality for end overlap interaction targets.
 
-### Notes
-Ensure to compile and save your blueprint regularly and monitor the output log for any errors or warnings to maintain optimal performance.
+
+## HitTrigger
+
+`AISHitTrigger` is an essential component of the `InteractionSystem`, designed to detect and respond to physical impacts within the game environment. This actor allows for dynamic interaction management and is highly configurable within the Unreal Editor to suit various gameplay needs.
+
+### Overview
+`AISHitTrigger` extends `AActor` and specializes in managing and responding to collision-based events. It is equipped with configurable properties and editor-specific functions that enable precise control over how interactions are triggered and managed upon physical impacts.
+
+### Features
+- **Collision Detection**: Detects collisions and triggers configured interactions based on those events.
+- **Dynamic Interaction Response**: Allows for real-time management of game mechanics in response to detected hits.
+- **Configurable Sound and Visual Feedback**: Integrates audio and visual components to enhance interaction feedback.
+
+### Usage
+To implement `AISHitTrigger` in your game:
+1. Place the `AISHitTrigger` actor within your game world where interactions should occur upon collision.
+2. Configure the `HitTriggerMesh` to visually represent the trigger area.
+3. Attach the `HitTriggerSound` to provide audio feedback upon interactions.
+
+### Properties
+- **MainRoot**: The primary root component of the trigger.
+- **HitTriggerMesh**: A static mesh component that visually represents the trigger area.
+- **HitTriggerSound**: An audio component that plays sounds when the trigger is activated.
+
+### Interaction Configuration
+- **InteractionTargets**: Specifies the targets that this trigger can interact with upon collision.
+- **bInfiniteHits**: When enabled, allows unlimited interactions; otherwise, interaction count is limited by `DisableAfterHits`.
+- **DisableAfterHits**: Limits the number of times interactions can be triggered when `bInfiniteHits` is false.
+- **CurrentHits**: Displays the current count of how many times interactions have been triggered.
+
+### Editor Functions
+`AISHitTrigger` includes several blueprint-callable functions that facilitate rapid configuration and testing within the Unreal Editor:
+- **AddGroupToConfiguration**: Adds a predefined group of actors to the trigger configuration, allowing for batch configuration of interaction targets.
+
+### Development Tools
+In the Unreal Editor, developers can use blueprint-callable functions to quickly adjust trigger settings and test interactions without the need for compiling scripts:
+- **OnHitTriggerHit**: Function to handle logic when a collision occurs.
+- **ActivateInteractions**: Activates the interactions defined for the hit trigger.
+
