@@ -29,6 +29,12 @@ General simple interaction component-based system. With using two components IST
 ### Make your own trigger
 - have some fancy system? (e.g. cool rocket laucher? add TriggerComponent and define it on shooting! use that trigger for spawning enemies ) 
 
+## Additional Actors
+- GravityObject
+- VFXActor
+- Radio
+
+
 ## Use Cases 
 - ThunderEffect: Trigger + PalleteSwitcher + AudioPlayer 
 - Magic Stairs: Trigger + TransformChanger 
