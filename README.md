@@ -1,6 +1,9 @@
 # InteractionSystem
 General simple interaction component-based system. With using two components ISTriggerComponent and ISReceiverComponent you can easily trigger any actors abilities in level. Part of TypicoGames plugin system. Usage of IS found in TransformChanger, PalleteSwitcher, BoidSystem, etc.
 
+- collision definitions for different interactions 
+
+
 ## ISReceiverComponent
 
 - place this to any actor 
@@ -34,4 +37,5 @@ General simple interaction component-based system. With using two components IST
 - Megic Harry Potter stairs: Interval Trigger + AxisRotator + TransformChanger
 - AsteroidSystem: TrigonometricMover 
 - Morphing Asteroid System: Trigonometric Mover + Transform Changer 
+- Health Systems: player can define death on trigger from enemy AI 
 
