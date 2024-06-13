@@ -8,8 +8,23 @@ General simple interaction component-based system. With using two components IST
 
 
 ## ISTriggerComponent
-- use some of defined triggers to Trigger actions from actors possessing ReceiverComponent 
+- place on Actor and call ActivateInteraction, whenever you want to implement triggering interaction. 
+- use some of defined TriggerActors (BoxTrigger, HitTrigger, IntervalTrigger) 
 
+
+
+## Existing trigger reference
+
+### BoxTrigger
+- box where trigger is made by overlaping 
+### HitTrigger
+- Mesh that triggers on HitCollision 
+### IntervalTrigger 
+- Both TRIGGER and RECEIVER 
+- define intervals of triggering 
+
+### Make your own trigger
+- have some fancy system? (e.g. cool rocket laucher? add TriggerComponent and define it on shooting! use that trigger for spawning enemies ) 
 
 ## Use Cases 
 - ThunderEffect: Trigger + PalleteSwitcher + AudioPlayer 
