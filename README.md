@@ -30,5 +30,8 @@ General simple interaction component-based system. With using two components IST
 - ThunderEffect: Trigger + PalleteSwitcher + AudioPlayer 
 - Magic Stairs: Trigger + TransformChanger 
 - Day & Night cycle: IntervalTrigger + PalleteSwitcher + <ThunderEffect>
-
+- Health Indication: Health trigger + PalleteSwitcher + AudioPlayer 
+- Megic Harry Potter stairs: Interval Trigger + AxisRotator + TransformChanger
+- AsteroidSystem: TrigonometricMover 
+- Morphing Asteroid System: Trigonometric Mover + Transform Changer 
 
